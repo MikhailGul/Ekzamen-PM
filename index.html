@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Год семьи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/logo.svg" alt="Логотип" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#initiatives">Инициативы</a></li>
+                    <li><a href="#events">Мероприятия</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="img/banner1.jpg" alt="Баннер 1">
+                    <p>Добро пожаловать на сайт, посвященный Году семьи!</p>
+                </div>
+                <div class="slide">
+                    <img src="img/banner2.jpg" alt="Баннер 2">
+                    <p>Узнайте о наших инициативах, направленных на укрепление семейных ценностей.</p>
+                </div>
+                <div class="slide">
+                    <img src="img/banner3.jpg" alt="Баннер 3">
+                    <p>Присоединяйтесь к нашим мероприятиям и становитесь частью большой семьи.</p>
+                </div>
+                <div class="slide">
+                    <img src="img/banner4.jpg" alt="Баннер 4">
+                    <p>Вместе мы можем создать лучшее будущее для наших детей.</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev">
+                        <img src="img/icons8-назад-32.png" alt="Previous">
+                    </button>
+                    <button class="next">
+                        <img src="img/icons8-вперед-32.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="initiatives">
+        <div class="container">
+            <h2>Инициативы</h2>
+            <div class="initiatives-list">
+                <div class="initiative">
+                    <h3>Инициатива 1</h3>
+                    <p>Создание центров семейной поддержки</p>
+                    <button class="more-info" data-modal="modal1">Подробнее</button>
+                </div>
+                <div class="initiative">
+                    <h3>Инициатива 2</h3>
+                    <p>Программы по укреплению брака</p>
+                    <button class="more-info" data-modal="modal2">Подробнее</button>
+                </div>
+                <div class="initiative">
+                    <h3>Инициатива 3</h3>
+                    <p>Социальная поддержка многодетных семей</p>
+                    <button class="more-info" data-modal="modal3">Подробнее</button>
+                </div>
+                <div class="initiative">
+                    <h3>Инициатива 4</h3>
+                    <p>Психологическая помощь семьям в кризисных ситуациях</p>
+                    <button class="more-info" data-modal="modal4">Подробнее</button>
+                </div>
+                <div class="initiative">
+                    <h3>Инициатива 5</h3>
+                    <p>Проведение образовательных семинаров для родителей</p>
+                    <button class="more-info" data-modal="modal5">Подробнее</button>
+                </div>
+                <div class="initiative">
+                    <h3>Инициатива 6</h3>
+                    <p>Организация семейных спортивных мероприятий</p>
+                    <button class="more-info" data-modal="modal6">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Мероприятия</h2>
+            <div class="events-list">
+                <div class="event">
+                    <h3>Фестиваль семейных ценностей</h3>
+                    <p>Ежегодный фестиваль, посвященный укреплению семейных традиций.</p>
+                    <button class="register" data-modal="registerModal1">Регистрация</button>
+                </div>
+                <div class="event">
+                    <h3>Семейный спортивный день</h3>
+                    <p>Спортивные соревнования и игры для всей семьи.</p>
+                    <button class="register" data-modal="registerModal2">Регистрация</button>
+                </div>
+                <div class="event">
+                    <h3>Семинар для молодых родителей</h3>
+                    <p>Образовательные лекции и практические занятия для молодых родителей.</p>
+                    <button class="register" data-modal="registerModal3">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Год семьи</p>
+            <div class="footer-links">
+                <a href="#about">О нас</a>
+                <a href="#initiatives">Инициативы</a>
+                <a href="#events">Мероприятия</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="img/icons8-телеграмма-app-48.png" alt="Telegram"></a>
+                <a href="#"><img src="img/icons8-вконтакте-48.png" alt="VK"></a>
+            </div>
+            <p>Адрес: ул. Примерная, д. 1</p>
+            <p>Телефон: +7 123 456 78 90</p>
+            <p>Email: info@example.com</p>
+            <button id="scrollTop">Вверх</button>
+        </div>
+    </footer>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Создание центров семейной поддержки, которые будут предлагать консультации и помощь семьям в трудных жизненных ситуациях.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Разработка и внедрение программ, направленных на укрепление брачных отношений и предотвращение разводов.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Предоставление социальной и финансовой поддержки многодетным семьям для улучшения их качества жизни.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Оказание психологической помощи семьям, столкнувшимся с кризисными ситуациями, такими как потеря работы или утрата близкого человека.</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Организация образовательных семинаров и тренингов для родителей, направленных на повышение их компетенций в воспитании детей.</p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Проведение регулярных спортивных мероприятий для всей семьи, способствующих укреплению здоровья и семейных связей.</p>
+        </div>
+    </div>
+
+    <div id="registerModal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="registerForm1">
+                <label for="fio">ФИО:</label>
+                <input type="text" id="fio" name="fio" required>
+                <label for="participation">Форма участия:</label>
+                <select id="participation" name="participation" required>
+                    <option value="offline">Очно</option>
+                    <option value="online">Онлайн</option>
+                </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Зарегистрироваться</button>
+                <button type="reset">Очистить форму</button>
+                <button type="button" class="close">Закрыть</button>
+            </form>
+        </div>
+    </div>
+    <div id="registerModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="registerForm2">
+                <label for="fio">ФИО:</label>
+                <input type="text" id="fio" name="fio" required>
+                <label for="participation">Форма участия:</label>
+                <select id="participation" name="participation" required>
+                    <option value="offline">Очно</option>
+                    <option value="online">Онлайн</option>
+                </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Зарегистрироваться</button>
+                <button type="reset">Очистить форму</button>
+                <button type="button" class="close">Закрыть</button>
+            </form>
+        </div>
+    </div>
+    <div id="registerModal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="registerForm3">
+                <label for="fio">ФИО:</label>
+                <input type="text" id="fio" name="fio" required>
+                <label for="participation">Форма участия:</label>
+                <select id="participation" name="participation" required>
+                    <option value="offline">Очно</option>
+                    <option value="online">Онлайн</option>
+                </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Зарегистрироваться</button>
+                <button type="reset">Очистить форму</button>
+                <button type="button" class="close">Закрыть</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
